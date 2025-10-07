@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<title>Scoreboard</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="section">
+				<div class="teams">
+					<h3>HOME</h3>
+					<p class="scores" id="homeTeam">12</p>
+					<button class="addScores" onclick="addOneHome()">+ 1</button>
+					<button class="addScores" onclick="addTwoHome()">+ 2</button>
+					<button class="addScores" onclick="addThreeHome()">+ 3</button>
+				</div>
+				<!-- END .teams -->
+				<div class="teams">
+					<h3>GUEST</h3>
+					<p class="scores" id="guestTeam">5</p>
+					<button class="addScores" onclick="addOneGuest()">+ 1</button>
+					<button class="addScores" onclick="addTwoGuest()">+ 2</button>
+					<button class="addScores" onclick="addThreeGuest()">+ 3</button>
+				</div>
+				<!-- END .teams -->
+			</div>
+			<!-- END .section -->
+			<div class="section">
+				<button id="reset" onclick="resetAll()">New Game</button>
+			</div>
+			<!-- END .section -->
+		</div>
+		<!-- END .container -->
+	</body>
+</html>
+<script src="index.js"></script>
